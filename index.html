@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>browser web scrapping</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css" type="text/css">
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js"></script>
+      <script src="helpers.js"></script>
+      <style>
+         #main-body {
+            margin-top: 2em;
+         }
+         iframe {
+            display: none;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="main-body" class="ui container">
+         <div class="ui basic segment container">
+            <!--   Search Field input   -->
+            <div class="ui big icon input">
+               <input id="search-box" type="text" placeholder="Search huge..." required>
+              <i class="search icon"></i>
+            </div>
+         </div>
+         <div id="cards-container" class="ui cards centered segment basic"></div>
+        <div id="loader" class="ui inverted dimmer">
+          <div class="ui large text loader">Loading</div>
+        </div>
+      </div>
+      <!--   iframes container   -->
+      <div id="i-frames"></div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
+
+
+
+
+
